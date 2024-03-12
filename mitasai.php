@@ -19,17 +19,17 @@
             </h1>
         </div>
 
-        <form action="mitasai_stamp.php" method="get" class="form">
+        <form action="images/mitasai_stamp.php" method="get" class="form">
             <input name="pass" placeholder="パスワードを入力" class="textbox">
             <button type="submit" class="button"><i class="fa-solid fa-play"></i></button>
         </form>
 
         <div class="stamps">
             <img <?php if (!empty($_COOKIE['page1'])) {
-                echo 'src="stamp_hidari.png"';
+                echo 'src="images/stamp_hidari.png"';
             } ?> class="stamp_img_left">
             <img <?php if (!empty($_COOKIE['page2'])) {
-                echo 'src="stamp_migi.png"';
+                echo 'src="images/stamp_migi.png"';
             } ?> class="stamp_img_right">
         </div>
 
@@ -53,7 +53,7 @@
             }
         ?>
         <figure>
-            <img class="stamp-completion" src="stamp-completion.jpg">
+            <img class="images/stamp-completion" src="images/stamp-completion.jpg">
             <figcaption>スタンプ完成図</figcaption>
         </figure>
         <hr>
@@ -77,7 +77,7 @@
                 大学院校舎 351-A教室でKeMCoMから特製グッズをプレゼント！
             </p>
             <figure>
-                <img class="yukichi" src="yukichi.png">
+                <img class="yukichi" src="images/yukichi.png">
                 <figcaption>特製グッズ(一例)</figcaption>
             </figure>
         </div>
