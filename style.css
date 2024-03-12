@@ -1,0 +1,244 @@
+:root {
+    --midnight-blue: #0E1341;
+    --cerise: #D54E80;
+    --powder-blue: #B4D1CB;
+    --white: #FFFFFF;
+    --base-font-family: 'Noto Sans JP', sans-serif;
+    --title-font-size: 80px;
+}
+
+body {
+    background-color: var(--powder-blue);
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+hr {
+    border: 2px solid var(--midnight-blue);
+}
+
+.subtitle {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    margin: auto;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.title {
+    text-align: center;
+    font-size: var(--title-font-size);
+    font-weight: 900;
+}
+
+.title-section {
+    position: relative;
+    width: 90%;
+    padding-top: 10%;
+    margin: auto;
+    color: var(--midnight-blue);
+    font-family: var(--base-font-family);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-section::before,
+.title-section::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 120%;
+    background: linear-gradient(to bottom, var(--cerise) 50%, transparent 50%);
+    background-size: 100% 30px;
+}
+
+.title-section::before {
+    left: -5%;
+}
+
+.title-section::after {
+    right: -5%;
+}
+
+.how-to {
+    margin: 10% auto;
+    display: flex;
+    font-size: 65px;
+    font-family: var(--base-font-family);
+    font-weight: 700;
+    text-align: center;
+    color: var(--midnight-blue);
+    justify-content: center;
+}
+
+.form {
+    margin: 15% auto;
+    font-family: var(--base-font-family);
+    text-align: center;
+}
+
+.textbox {
+    width: 80%;
+    height: 90px;
+    border-width: 4px;
+    border-color: var(--cerise);
+    font-size: 60px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.button {
+    width: 18%;
+    height: 90px;
+    border-color: var(--cerise);
+    background-color: var(--cerise);
+    color: var(--white);
+    font-size: 40px;
+    vertical-align: top;
+}
+
+
+.stamps {
+    width: 100%;
+    height: auto;
+    margin: 15% auto;
+    display: flex;
+    justify-content: center;
+}
+
+.stamp_img_left {
+    width: 400px;
+    height: 800px;
+    background-color: var(--white);
+    background-image: url("./stamp_hidari_back.png");
+    background-size: 300px;
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border: solid 4px var(--cerise);
+    overflow: hidden;
+}
+
+.stamp_img_right {
+    width: 400px;
+    height: 800px;
+    background-color: var(--white);
+    background-image: url("./stamp_migi_back.png");
+    background-size: 305px;
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border: solid 4px var(--cerise);
+    overflow: hidden;
+}
+
+.instructions {
+    display: grid;
+    justify-content: space-between;
+}
+
+.instruction-number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 5%;
+    margin: 5% auto;
+    border: solid 4px var(--midnight-blue);
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--midnight-blue);
+    font-family: var(--base-font-family);
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.instruction-text {
+    margin: auto;
+    color: var(--midnight-blue);
+    font-family: var(--base-font-family);
+    font-size: 40px;
+    text-align: justify;
+}
+
+.map {
+    max-width: 100%;
+    background-color: var(--white);
+    margin: 5% auto;
+    text-align: center;
+    display: block;
+}
+
+.stamp-completion {
+    max-width: 100%;
+    margin: 5% auto;
+    text-align: center;
+    display: block;
+}
+
+.yukichi {
+    max-width: 100%;
+    margin: 5% auto;
+    text-align: center;
+    display: block;
+}
+
+figcaption {
+    background-color: var(--powder-blue);
+    color: var(--midnight-blue);
+    font-family: var(--base-font-family);
+    padding: auto;
+    font-size: 36px;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.notices {
+    padding-top: 10%;
+    margin: 30px auto;
+    color: var(--midnight-blue);
+    font-family: var(--base-font-family);
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* ↓ここからmitasai_stamp.php */
+
+.notifications {
+    color: var(--midnight-blue);
+    font-family: var(--base-font-family);
+    font-size: 50px;
+    text-align: center;
+    margin: 70% auto 0px;
+}
+
+.back-to-stamp-rally {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--base-font-family);
+    font-size: 40px;
+}
+
+.back-to-stamp-rally-button {
+    width: 60%;
+    height: 100px;
+    text-align: center;
+    padding: 50px auto;
+    margin: 100px auto;
+    display: block;
+    background-color: var(--cerise);
+    border: 3px solid var(--cerise);
+    border-radius: 10px;
+}
