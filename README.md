@@ -1,5 +1,10 @@
 # 三田祭スタンプラリー
-参考URL: https://studio.kemco.keio.ac.jp/mitasai/mitasai.php
+URL: https://studio.kemco.keio.ac.jp/mitasai/mitasai.php
+
+# 概要
+- mitasai.php：トップページ
+- mitasai_stamp.php：パスワード送信後のページ
+- mitasai_reset.php：リセットボタンクリック後のページ
 
 # スタンプが押される仕組み
 mitasai_stampの最初でcookieの登録をしている。
